@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient( #dd83298e,  #ffe4c4 );
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+
+section{
+    width: 15vw;
+    height: 50vh;
+    border: solid black 2px;
+    text-align: center;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+    
+    width: 100px;
+}
+
+.pedra{
+    background: rgba(0, 38, 255, 0.822);
+}
+
+.papel{
+    background: rgba(137, 43, 226, 0.815);
+}
+
+.tesoura{
+    background-color: rgb(214, 40, 40);
+}
+
+.texto{
+    text-align: end;
+   
+    width: 97vw;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+

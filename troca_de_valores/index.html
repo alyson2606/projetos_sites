@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <article>
+            <img src="./img/logo.gif" alt="Converte_image" class="gif_image">
+        </article>
+        
+        <main>
+            <p>converter de:</p><br>
+            <label>
+                <select>
+                    <option>
+                        Real Brasileiro
+                    </option>
+                </select>
+            </label>
+
+            <br>
+
+            <p>Para</p><br>
+            <select class="another_values">
+                <option value="dolar">Dólar</option> <!-- Corrigido o valor aqui -->
+                <option value="euro">Euro</option>
+                <option value="libra">Libra</option>
+            </select>
+            
+
+            <br>
+
+            <p><b>Valor </b><input type="number" placeholder="Digite o valor:" class="currency"></p>
+            <br>
+            <button class="button">Converter</button><br>
+
+            <div>
+                <img src="img/brasil 2.png" alt=" BRASILflag">
+                <p>Real</p>
+                <p id="real_money">R$ 0,00</p>
+            </div>
+
+            <img src="./img/Vector.png" alt="arrow">
+
+            <div>
+                <img src="img/estados-unidos (1) 1.png" alt="EUA flag" id= "eua_flag">
+                <p id=" name">Dólar</p>
+                <p id="dolar_money">$ 0,00</p>
+                
+            </div>
+        </main>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
