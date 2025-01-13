@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;;
+    box-sizing: border-box;
+    
+    }
+
     html,
     body {
       height: 100%;
@@ -27,18 +38,22 @@
       box-shadow: 0 4px 8px rgba(73, 66, 66, 0.9);
     }
 
-    section .card{
+    section .card {
       background-color: #9b9b9b;
       height: 20rem;
     }
 
-    section img{
+    section img {
       margin-bottom: 20px;
     }
 
-    section p{
+    section p {
       color: white;
       font-style: italic;
+    }
+    
+    .fw-bold ms-3{
+      color: #000;
     }
   </style>
 </head>
@@ -52,24 +67,28 @@
       <h1 class="text-white mb-4 text-center">Quem Somos Nós? </h1>
 
       <p class="fw-bold ms-3">
-        a gente é uns cara ai que vende uns ovo boladao e grandao  
+        No coração do Mercado Público da Torre, em João Pessoa, está o <b style="color: rgb(207, 72, 72);">China
+          Ovos</b>, um comércio que há 20 anos leva qualidade e confiança para a mesa das famílias e negócios locais.
+        Somos especialistas na venda de ovos de todos os tipos e tamanhos — brancos, vermelhos, de capoeira e codorna —
+        além de oferecer o melhor mel de abelha legítimo, manteiga da terra autêntica e queijos irresistíveis.
       </p>
 
       <p class="fw-bold ms-3">
-        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with
-        some actual content in here, rather than just this boring placeholder text that goes on and on, but actually
-        conveys no tangibleaaaa information at. It simply takes up space and should not really be read.
+        Atendemos tanto no varejo quanto no atacado, sendo parceiros de confiança de padarias, confeitarias, docerias e
+        outros estabelecimentos da região. Nossa missão é levar o melhor da produção local com um atendimento amigo e
+        atencioso. Afinal, o que fazemos não é só vender, é cultivar relações e alimentar sonhos!
       </p>
 
       <p class="fw-bold ms-3">
-        And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or
-        some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        Seja para um bolo caseiro, uma receita especial ou o abastecimento do seu comércio, o <b
+          style="color: rgb(207, 72, 72);">China Ovos</b> é o seu destino certo.
       </p>
     </div>
   </header>
 
   <main style="background-color: #eec951;">
-    <a href="https://wa.me/5583988927268?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos." target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/5583988927268?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos."
+      target="_blank" rel="noopener noreferrer">
       <img src="./img/WhatsApp_Logo_PNG_Sem_Fundo_Transparente.png" class="rounded float-end" alt="WhatsApp"
         style="width: 70px; position: fixed; z-index: 1; bottom: 20px; right: 20px;">
     </a>
@@ -125,7 +144,7 @@
           </ul>
         </div>
 
-        <!-- Card 4 -->
+        <!-- Card 4
         <div class="card m-3" style="width: 18rem; background-color: #344E41; border-radius: 20px;">
           <img src="./img/Ovos_Vermelhos.png" class="card-img-top" alt="..."
             style="border: solid 1.5px black; border-radius: 20px;">
@@ -139,7 +158,7 @@
             <li class="list-group-item" id="texto" style="background-color: #344E41;">A second item</li>
             <li class="list-group-item" id="texto" style="background-color: #344E41;">A third item</li>
           </ul>
-        </div>
+        </div> -->
 
         <div class="card m-3" style="width: 18rem; background-color: #344E41; border-radius: 20px;" id="texto">
           <img src="./img/ovo_capoeira.png" class="card-img-top" alt="..."
@@ -165,38 +184,42 @@
 ">
     <div class="container text-center">
       <div class="d-flex flex-row flex-wrap justify-content-center grid gap-3">
-      
+
         <h1>Nossas Vantagens:</h1>
-        <h3>Confiando no grupo <b style="color: rgb(207, 72, 72);">China Ovos</b> suas vantagens são garantidas. Veja algumas: </h3>
+        <h3>Confiando no grupo <b style="color: rgb(207, 72, 72);">China Ovos</b> suas vantagens são garantidas. Veja
+          algumas: </h3>
         <br>
         <div class="card" style="width: 18rem;">
-          <img src="./img/meodas.webp" class="card-img-top" alt="..." style="height: 120px; width: 210px; margin-left: 30px; margin-top: 20px;">
+          <img src="./img/meodas.webp" class="card-img-top" alt="..."
+            style="height: 120px; width: 210px; margin-left: 30px; margin-top: 20px;">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            </div>
           </div>
-        <div class="card" style="width: 18rem;">
-          <img src="./img/cronômetro.png" class="card-img-top" alt="..." style="height: 120px; width: 130px; margin-left: 80px; margin-top: 20px;">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            </div>
         </div>
-        
         <div class="card" style="width: 18rem;">
-          <img src="./img/selecionado.png" class="card-img-top" alt="..." style="height: 140px; width: 140px; margin-top: 10px; margin-left: 75px;">
+          <img src="./img/cronômetro.png" class="card-img-top" alt="..."
+            style="height: 120px; width: 130px; margin-left: 80px; margin-top: 20px;">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            </div>
           </div>
+        </div>
 
-      </div> 
+        <div class="card" style="width: 18rem;">
+          <img src="./img/selecionado.png" class="card-img-top" alt="..."
+            style="height: 140px; width: 140px; margin-top: 10px; margin-left: 75px;">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
     <br>
     <br>
-   
+
   </section>
 
 
