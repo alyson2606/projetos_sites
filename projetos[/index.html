@@ -39,7 +39,7 @@
     }
 
     section .card {
-      background-color: #9b9b9b;
+      background-color: #9c7b46ea;
       height: 20rem;
     }
 
@@ -55,14 +55,34 @@
     .fw-bold ms-3{
       color: #000;
     }
+
+    @media (max-width: 768px) {
+  header img {
+    width: 100%; /* Faz a imagem ocupar toda a largura */
+    max-height: none; /* Remove restrições de altura máxima */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamento */
+  }
+
+  header {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Adiciona espaçamento interno */
+  }
+
+  header h1 {
+    margin-bottom: 20px; /* Espaço entre o título e a imagem */
+  }
+}
+
+
   </style>
 </head>
 
 <body>
   <header style="background-color: #eec952;">
     <div class="clearfix">
-      <img src="./img/Cars_Lighting_Mcqueen.webp" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="..."
-        style="max-height: 250px;">
+      <img src="./img/Box_China_Ovos.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid mt-5" alt="..."
+        style="max-height: 250px; ">
 
       <h1 class="text-white mb-4 text-center">Quem Somos Nós? </h1>
 
@@ -81,7 +101,7 @@
 
       <p class="fw-bold ms-3">
         Seja para um bolo caseiro, uma receita especial ou o abastecimento do seu comércio, o <b
-          style="color: rgb(207, 72, 72);">China Ovos</b> é o seu destino certo.
+          style="color: rgb(207, 72, 72);">China Ovos</b> é o seu destino certo!
       </p>
     </div>
   </header>
@@ -144,21 +164,7 @@
           </ul>
         </div>
 
-        <!-- Card 4
-        <div class="card m-3" style="width: 18rem; background-color: #344E41; border-radius: 20px;">
-          <img src="./img/Ovos_Vermelhos.png" class="card-img-top" alt="..."
-            style="border: solid 1.5px black; border-radius: 20px;">
-          <div class="card-body">
-            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Card title</h5>
-            <p class="card-text" id="texto">Some quick example text to build on the card title and make up the bulk of
-              the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">An item</li>
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">A second item</li>
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">A third item</li>
-          </ul>
-        </div> -->
+
 
         <div class="card m-3" style="width: 18rem; background-color: #344E41; border-radius: 20px;" id="texto">
           <img src="./img/ovo_capoeira.png" class="card-img-top" alt="..."
@@ -198,7 +204,7 @@
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./img/cronômetro.png" class="card-img-top" alt="..."
+          <img src="./img/medicamento (2).png" class="card-img-top" alt="..."
             style="height: 120px; width: 130px; margin-left: 80px; margin-top: 20px;">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
