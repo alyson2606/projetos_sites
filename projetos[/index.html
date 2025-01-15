@@ -11,12 +11,11 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
 
-    *{
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", serif;;
-    box-sizing: border-box;
-    
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", serif;
+      box-sizing: border-box;
     }
 
     html,
@@ -32,6 +31,10 @@
 
     #texto {
       color: white;
+    }
+
+    .card-text {
+      text-align: justify;
     }
 
     #special-section .card {
@@ -51,30 +54,35 @@
       color: white;
       font-style: italic;
     }
-    
-    .fw-bold ms-3{
+
+    .fw-bold ms-3 {
       color: #000;
     }
 
     @media (max-width: 768px) {
-  header img {
-    width: 100%; /* Faz a imagem ocupar toda a largura */
-    max-height: none; /* Remove restrições de altura máxima */
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove espaçamento */
-  }
+      header img {
+        width: 100%;
+        /* Faz a imagem ocupar toda a largura */
+        max-height: none;
+        /* Remove restrições de altura máxima */
+        margin: 0;
+        /* Remove margens */
+        padding: 0;
+        /* Remove espaçamento */
+      }
 
-  header {
-    text-align: center; /* Centraliza o texto */
-    padding: 10px; /* Adiciona espaçamento interno */
-  }
+      header {
+        text-align: center;
+        /* Centraliza o texto */
+        padding: 10px;
+        /* Adiciona espaçamento interno */
+      }
 
-  header h1 {
-    margin-bottom: 20px; /* Espaço entre o título e a imagem */
-  }
-}
-
-
+      header h1 {
+        margin-bottom: 20px;
+        /* Espaço entre o título e a imagem */
+      }
+    }
   </style>
 </head>
 
@@ -114,20 +122,22 @@
     </a>
 
     <div class="container text-center">
+
       <!-- Use Flexbox para alinhar os cards em uma linha -->
       <div class="d-flex flex-row flex-wrap justify-content-center">
+
         <!-- Card 1 -->
         <div class="card m-3" style="width: 18rem; background-color: #344E41; border-radius: 20px;" id="texto">
           <img src="./img/Ovos_Brancos.png" class="card-img-top " alt="..."
             style="border: solid 1.5px black; border-radius: 20px;">
           <div class="card-body">
-            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Ovos Brancos</h5>
+            <p class="card-text">Os ovos brancos tipo grande são versáteis e ideais para consumo diário, oferecendo
+              qualidade e consistência. São uma excelente escolha para diferentes preparações culinárias.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">An item</li>
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">A second item</li>
+            <li class="list-group-item" id="texto" style="background-color: #344E41;">Tipo: Grande</li>
+            <li class="list-group-item" id="texto" style="background-color: #344E41;">48g a 57g</li>
             <li class="list-group-item" id="texto" style="background-color: #344E41;">A third item</li>
           </ul>
         </div>
@@ -137,13 +147,13 @@
           <img src="./img/Ovos_Brancos.png" class="card-img-top" alt="..."
             style="border: solid 1.5px black; border-radius: 20px;">
           <div class="card-body">
-            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Ovos Brancos</h5>
+            <p class="card-text">Os ovos brancos tipo extra se destacam pelo tamanho avantajado e pela qualidade
+              superior, perfeitos para receitas que exigem maior rendimento e consistência.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">An item</li>
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">A second item</li>
+            <li class="list-group-item" id="texto" style="background-color: #344E41;">Tipo: Extra</li>
+            <li class="list-group-item" id="texto" style="background-color: #344E41;">58g a 67g</li>
             <li class="list-group-item" id="texto" style="background-color: #344E41;">A third item</li>
           </ul>
         </div>
@@ -153,13 +163,13 @@
           <img src="./img/Ovos_Vermelhos.png" class="card-img-top" alt="..."
             style="border: solid 1.5px black; border-radius: 20px;">
           <div class="card-body">
-            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Ovos Vermelhos</h5>
+            <p class="card-text">Com casca avermelhada mais resistente, são reconhecidos pelo sabor diferenciado, por
+              sua durabilidade e pela qualidade superior em usos variados.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">An item</li>
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">A second item</li>
+            <li class="list-group-item" id="texto" style="background-color: #344E41;">Tipo: Extra</li>
+            <li class="list-group-item" id="texto" style="background-color: #344E41;">58g a 67g</li>
             <li class="list-group-item" id="texto" style="background-color: #344E41;">A third item</li>
           </ul>
         </div>
@@ -170,13 +180,14 @@
           <img src="./img/ovo_capoeira.png" class="card-img-top" alt="..."
             style="border: solid 1.5px black; border-radius: 20px;">
           <div class="card-body">
-            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Ovos Capoeira</h5>
+            <p class="card-text text-justify">Produzidos por galinhas criadas de forma mais natural, os ovos de capoeira
+              têm casca
+              mais grossa, sabor marcante e coloração variada, além de sabor e coloração da gema mais intensos.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">An item</li>
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">A second item</li>
+            <li class="list-group-item" id="texto" style="background-color: #344E41;">Tipo: Capoeira</li>
+            <li class="list-group-item" id="texto" style="background-color: #344E41;">48g a 57g | 58g a 67g</li>
             <li class="list-group-item" id="texto" style="background-color: #344E41;">A third item</li>
           </ul>
         </div>
@@ -186,8 +197,8 @@
     <br>
     <br>
   </main>
-  <section id="special-section" style=" background: linear-gradient(180deg, #fde16e, #fff387);
-">
+
+  <section id="special-section" style=" background: linear-gradient(180deg, #fde16e, #fff387);">
     <div class="container text-center">
       <div class="d-flex flex-row flex-wrap justify-content-center grid gap-3">
 
@@ -195,20 +206,22 @@
         <h3>Confiando no grupo <b style="color: rgb(207, 72, 72);">China Ovos</b> suas vantagens são garantidas. Veja
           algumas: </h3>
         <br>
-        <div class="card" style="width: 18rem;">
+
+        <div class="card" style="width: 20rem;">
           <img src="./img/meodas.webp" class="card-img-top" alt="..."
             style="height: 120px; width: 210px; margin-left: 30px; margin-top: 20px;">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text">Com preços acessíveis e variedade de tamanhos e tipos, nossos ovos garantem a melhor
+              relação entre qualidade e economia, atendendo a todas as necessidades, seja no varejo ou atacado.</p>
           </div>
         </div>
+
         <div class="card" style="width: 18rem;">
           <img src="./img/medicamento (2).png" class="card-img-top" alt="..."
             style="height: 120px; width: 130px; margin-left: 80px; margin-top: 20px;">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text">Ricos em proteínas, vitaminas e minerais essenciais, nossos ovos são uma escolha
+              nutritiva para quem busca uma alimentação equilibrada e saudável.</p>
           </div>
         </div>
 
@@ -216,8 +229,8 @@
           <img src="./img/selecionado.png" class="card-img-top" alt="..."
             style="height: 140px; width: 140px; margin-top: 10px; margin-left: 75px;">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text">Selecionamos ovos frescos e de alta qualidade, com rigor no controle e armazenamento,
+              garantindo o melhor produto para você e sua família.</p>
           </div>
         </div>
 
