@@ -1,253 +1,317 @@
 <!doctype html>
 <html lang="pt-br">
 
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>China Ovos</title>
+  <title>China Ovos - Qualidade e Confiança</title>
+  <meta name="description"
+    content="China Ovos - Especialistas em ovos de qualidade, mel de abelha, manteiga da terra e queijos. Atendemos varejo e atacado em João Pessoa.">
+  <meta name="keywords" content="ovos, mel, manteiga, queijos, João Pessoa, atacado, varejo">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+    :root {
+      --primary-color: #eec952;
+      --secondary-color: #344E41;
+      --accent-color: #ff6b6b;
+      --text-color: #ffffff;
+      --background-gradient: linear-gradient(180deg, #fde16e, #fff387);
+    }
 
     * {
       margin: 0;
       padding: 0;
-      font-family: "Poppins", serif;
+      font-family: "Poppins", sans-serif;
       box-sizing: border-box;
     }
 
-    html,
     body {
-      height: 100%;
-      margin: 0;
+      background: var(--background-gradient);
     }
 
-    header,
-    main {
-      min-height: 100vh;
+    header {
+      background: var(--primary-color);
+      padding: 2rem 0;
     }
 
-    #texto {
-      color: white;
+    h1{
+      margin-top: 15px;
+    }
+
+    header h1 {
+      color: var(--text-color);
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .card {
+      background-color: var(--secondary-color);
+      border-radius: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-img-top {
+      border-radius: 20px 20px 0 0;
+      border: 2px solid #000;
+    }
+
+    .card-title {
+      color: #3cd83c;
+      font-style: italic;
     }
 
     .card-text {
+      color: var(--text-color);
       text-align: justify;
     }
 
-    #special-section .card {
-      box-shadow: 0 4px 8px rgba(73, 66, 66, 0.9);
+    .list-group-item {
+      background-color: var(--secondary-color);
+      color: var(--text-color);
     }
 
-    section .card {
-      background-color: #9c7b46ea;
-      height: 21.5rem;
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
     }
 
-    section img {
-      margin-bottom: 20px;
+    .whatsapp-float:hover {
+      opacity: 1;
     }
 
-    section p {
-      color: white;
-      font-style: italic;
-      
+    .navbar {
+      background-color: var(--secondary-color);
     }
 
-
-
-    .fw-bold ms-3 {
-      color: #000;
+    .navbar-brand,
+    .nav-link {
+      color: var(--text-color) !important;
     }
 
+    .navbar-toggler {
+      border-color: var(--text-color);
+    }
 
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      /* Alterado para o lado esquerdo */
+      z-index: 1000;
+      background-color: var(--accent-color);
+      color: var(--text-color);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-
-
-
-    @media (max-width: 768px) {
-      header img {
-        width: 100%;
-        /* Faz a imagem ocupar toda a largura */
-        max-height: none;
-        /* Remove restrições de altura máxima */
-        margin: 0;
-        /* Remove margens */
-        padding: 0;
-        /* Remove espaçamento */
-      }
-
-      header {
-        text-align: center;
-        /* Centraliza o texto */
-        padding: 10px;
-        /* Adiciona espaçamento interno */
-      }
-
-      header h1 {
-        margin-bottom: 20px;
-        /* Espaço entre o título e a imagem */
-      }
+    .back-to-top:hover {
+      background-color: #ff4c4c;
     }
   </style>
 </head>
 
 <body>
-  <header style="background-color: #eec952;">
-    <div class="clearfix">
-      <img src="./img/Box_China_Ovos.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid mt-5" alt="..."
-        style="max-height: 250px; ">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">China Ovos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#advantages">Vantagens</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      <h1 class="text-white mb-4 text-center fw-bold">Quem Somos Nós? </h1>
+  <!-- Header -->
+  <header id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <div class="col-md-6">
+          <img src="./img/Box_China_Ovos.jpg" class="img-fluid rounded shadow" alt="China Ovos" loading="lazy">
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-center mb-4">Quem Somos Nós?</h1>
+          <p class="lead">
+            No coração do Mercado Público da Torre, em João Pessoa, está o <b style="color: var(--accent-color);">China
+              Ovos</b>, um comércio que há 20 anos leva qualidade e confiança para a mesa das famílias e negócios
+            locais.
+          </p>
+          <p class="lead">
+            Somos especialistas na venda de ovos de todos os tipos e tamanhos — brancos, vermelhos, de capoeira e
+            codorna — além de oferecer o melhor mel de abelha legítimo, manteiga da terra autêntica e queijos
+            irresistíveis.
+          </p>
+          <p class="lead">
+            Atendemos tanto no varejo quanto no atacado, sendo parceiros de confiança de padarias, confeitarias,
+            docerias e outros estabelecimentos da região. Nossa missão é levar o melhor da produção local com um
+            atendimento amigo e atencioso. Afinal, o que fazemos não é só vender, é cultivar relações e alimentar
+            sonhos!
 
-      <p class="fw-bold ms-3">
-        No coração do Mercado Público da Torre, em João Pessoa, está o <b style="color: rgb(207, 72, 72);">China
-          Ovos</b>, um comércio que há 20 anos leva qualidade e confiança para a mesa das famílias e negócios locais.
-        Somos especialistas na venda de ovos de todos os tipos e tamanhos — brancos, vermelhos, de capoeira e codorna —
-        além de oferecer o melhor mel de abelha legítimo, manteiga da terra autêntica e queijos irresistíveis.
-      </p>
-
-      <p class="fw-bold ms-3">
-        Atendemos tanto no varejo quanto no atacado, sendo parceiros de confiança de padarias, confeitarias, docerias e
-        outros estabelecimentos da região. Nossa missão é levar o melhor da produção local com um atendimento amigo e
-        atencioso. Afinal, o que fazemos não é só vender, é cultivar relações e alimentar sonhos!
-      </p>
-
-      <p class="fw-bold ms-3">
-        Seja para um bolo caseiro, uma receita especial ou o abastecimento do seu comércio, o <b
-          style="color: rgb(207, 72, 72);">China Ovos</b> é o seu destino certo!
-      </p>
+            Seja para um bolo caseiro, uma receita especial ou o abastecimento do seu comércio, o China Ovos é o seu
+            destino certo!
+          </p>
+        </div>
+        
+      </div>
     </div>
   </header>
 
-  <main style="background-color: #eec951;">
-    <a href="https://wa.me/5583988927268?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos."
-      target="_blank" rel="noopener noreferrer">
-      <img src="./img/WhatsApp_Logo_PNG_Sem_Fundo_Transparente.png" class="rounded float-end" alt="WhatsApp"
-        style="width: 70px; position: fixed; z-index: 1; bottom: 20px; right: 20px; opacity: 0.7;">
-    </a>
-
-    <div class="container text-center">
-
-      <!-- Use Flexbox para alinhar os cards em uma linha -->
-      <div class="d-flex flex-row flex-wrap justify-content-center">
-
+  <!-- Main Content -->
+  <main id="products" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Nossos Produtos</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        
         <!-- Card 1 -->
-        <div class="card m-3" style="width: 18rem; background-color: #344E41; border-radius: 20px;" id="texto">
-          <img src="./img/Ovos_Brancos.png" class="card-img-top " alt="..."
-            style="border: solid 1.5px black; border-radius: 20px;">
-          <div class="card-body">
-            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Ovos Brancos</h5>
-            <p class="card-text">Os ovos brancos tipo grande são versáteis e ideais para consumo diário, oferecendo
-              qualidade e consistência. São uma excelente escolha para diferentes preparações culinárias.</p>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/Ovos_Brancos.png" class="card-img-top" alt="Ovos Brancos" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Ovos Brancos</h5>
+              <p class="card-text">Os ovos brancos tipo grande são versáteis e ideais para consumo diário, oferecendo
+                qualidade e consistência. São uma excelente escolha para diferentes preparações culinárias.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Tipo: <span class="fw-bold">Grande</span></li>
+              <li class="list-group-item">48g a 57g</li>
+            </ul>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">Tipo: <span class="fw-bold">Grande</span></li>
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">48g a 57g</li>
-
-          </ul>
         </div>
 
         <!-- Card 2 -->
-        <div class="card m-3" style="width: 18rem; background-color: #344E41; border-radius: 20px;" id="texto">
-          <img src="./img/Ovos_Brancos.png" class="card-img-top" alt="..."
-            style="border: solid 1.5px black; border-radius: 20px;">
-          <div class="card-body">
-            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Ovos Brancos</h5>
-            <p class="card-text">Os ovos brancos tipo extra se destacam pelo tamanho avantajado e pela qualidade
-              superior, perfeitos para receitas que exigem maior rendimento e consistência.</p>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/Ovos_Brancos.png" class="card-img-top" alt="Ovos Brancos Extra" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Ovos Brancos</h5>
+              <p class="card-text">Os ovos brancos tipo extra se destacam pelo tamanho avantajado e pela qualidade
+                superior, perfeitos para receitas que exigem maior rendimento e consistência.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Tipo: <span class="fw-bold">Extra</span></li>
+              <li class="list-group-item">58g a 67g</li>
+            </ul>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">Tipo: <span class="fw-bold">Extra</span></li>
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">58g a 67g</li>
-          </ul>
         </div>
 
         <!-- Card 3 -->
-        <div class="card m-3" style="width: 18rem; border-radius: 20px; background-color: #344E41;" id="texto">
-          <img src="./img/Ovos_Vermelhos.png" class="card-img-top" alt="..."
-            style="border: solid 1.5px black; border-radius: 20px;">
-          <div class="card-body">
-            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Ovos Vermelhos</h5>
-            <p class="card-text">Com casca avermelhada mais resistente, são reconhecidos pelo sabor diferenciado, por
-              sua durabilidade e pela qualidade superior em usos variados.</p>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/Ovos_Vermelhos.png" class="card-img-top" alt="Ovos Vermelhos" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Ovos Vermelhos</h5>
+              <p class="card-text">Com casca avermelhada mais resistente, são reconhecidos pelo sabor diferenciado e
+                durabilidade.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Tipo: <span class="fw-bold">Extra</span></li>
+              <li class="list-group-item">58g a 67g</li>
+            </ul>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">Tipo: <span class="fw-bold">Extra</span></li>
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">58g a 67g</li>
-          </ul>
         </div>
 
-
-
-        <div class="card m-3" style="width: 18rem; background-color: #344E41; border-radius: 20px;" id="texto">
-          <img src="./img/ovo_capoeira.png" class="card-img-top" alt="..."
-            style="border: solid 1.5px black; border-radius: 20px;">
-          <div class="card-body">
-            <h5 class="card-title fst-italic" style="color: rgb(60, 216, 60);">Ovos Capoeira</h5>
-            <p class="card-text text-justify">Produzidos por galinhas criadas de forma mais natural, os ovos de capoeira
-              têm casca
-              mais grossa, sabor marcante e coloração variada, além de sabor e coloração da gema mais intensos.</p>
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/ovo_capoeira.png" class="card-img-top" alt="Ovos de Capoeira" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Ovos de Capoeira</h5>
+              <p class="card-text">Produzidos por galinhas criadas de forma mais natural, têm casca grossa, sabor
+                marcante e coloração variada, além de sabor e coloração da gema mais intensos.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Tipo: <span class="fw-bold">Capoeira</span></li>
+              <li class="list-group-item">48g a 57g | 58g a 67g</li>
+            </ul>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">Tipo: <span class="fw-bold">Capoeira</span></li>
-            <li class="list-group-item" id="texto" style="background-color: #344E41;">48g a 57g | 58g a 67g</li>
-          </ul>
         </div>
-
       </div>
     </div>
-    <br>
-    <br>
   </main>
 
-  <section id="special-section" style=" background: linear-gradient(180deg, #fde16e, #fff387);">
-    <div class="container text-center">
-      <div class="d-flex flex-row flex-wrap justify-content-center grid gap-3">
-
-        <h1>Nossas Vantagens:</h1>
-        <h3>Confiando no grupo <b style="color: rgb(207, 72, 72);">China Ovos</b> suas vantagens são garantidas. Veja
-          algumas: </h3>
-        <br>
-
-        <div class="card" style="width: 20rem;">
-          <img src="./img/meodas.webp" class="card-img-top" alt="..."
-            style="height: 120px; width: 190px; margin-left: 58px; margin-top: 20px;">
-          <div class="card-body">
-            <p class="card-text">Com preços acessíveis e variedade de tamanhos e tipos, nossos ovos garantem a melhor
-              relação entre qualidade e economia, atendendo a todas as necessidades, seja no varejo ou atacado.</p>
+  <!-- Advantages Section -->
+  <section id="advantages" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Nossas Vantagens</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-tags fa-3x mb-3" style="color: var(--accent-color);"></i>
+              <h5 class="card-title">Preços Acessíveis</h5>
+              <p class="card-text">Oferecemos os melhores preços para atender tanto ao varejo quanto ao atacado.</p>
+            </div>
           </div>
         </div>
 
-        <div class="card" style="width: 20rem;">
-          <img src="./img/Saúde_projetos.png" class="card-img-top" alt="..."
-            style="height: 150px; width: 150px; margin-left: 89px; margin-top: 20px;">
-          <div class="card-body">
-            <p class="card-text">Ricos em proteínas, vitaminas e minerais essenciais, nossos ovos são uma escolha
-              nutritiva para quem busca uma alimentação equilibrada e saudável.</p>
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-heart fa-3x mb-3" style="color: var(--accent-color);"></i>
+              <h5 class="card-title">Qualidade Garantida</h5>
+              <p class="card-text">Selecionamos os melhores produtos para garantir sua satisfação.</p>
+            </div>
           </div>
         </div>
 
-        <div class="card" style="width: 20rem;">
-          <img src="./img/selecionado.png" class="card-img-top" alt="..."
-            style="height: 140px; width: 140px; margin-top: 10px; margin-left: 95px;">
-          <div class="card-body">
-            <p class="card-text">Selecionamos ovos frescos e de alta qualidade, com rigor no controle e armazenamento,
-              garantindo o melhor produto para você e sua família.</p>
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-shield-alt fa-3x mb-3" style="color: var(--accent-color);"></i>
+              <h5 class="card-title">Segurança e Confiança</h5>
+              <p class="card-text">Produtos frescos e de alta qualidade, com rigor no controle e armazenamento.</p>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
-    <br>
-    <br>
-
+    <br><br>
   </section>
 
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
 
-
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/5583988927268?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos."
+    class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <img src="./img/WhatsApp_Logo_PNG_Sem_Fundo_Transparente.png" alt="WhatsApp" width="70">
+  </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
